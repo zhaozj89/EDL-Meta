@@ -44,6 +44,8 @@
 
 * download [LDLPackage-v1.2](http://ldl.herokuapp.com/download) and [tensor_toolbox](http://www.tensortoolbox.org), which have their own licenses
 
+* download [SemEval Task #14](http://web.eecs.umich.edu/~mihalcea/affectivetext/) dataset
+
 * the results of label distribution learning methods, e.g., PT-X, AA-X, SA-X, can be calculated with `LDLPackage-v1.2/edl/cv_portion_ldl.m`
 
 * grid search can be conducted by `cv_grids.py` and `LDLPackage-v1.2/edl/cv_grid.m`
