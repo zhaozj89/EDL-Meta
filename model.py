@@ -64,12 +64,12 @@ class CNNText(nn.Module):
 
         y2 = F.conv1d(x, weight=vars[idx], bias=vars[idx + 1])
         y2 = self.relu(y2)
-        y2 = self.maxpool_1(y2)
+        y2 = self.maxpool_2(y2)
         idx += 2
 
         y3 = F.conv1d(x, weight=vars[idx], bias=vars[idx + 1])
         y3 = self.relu(y3)
-        y3 = self.maxpool_1(y3)
+        y3 = self.maxpool_3(y3)
         idx += 2
 
         y = torch.cat([y1, y2, y3], 2)
